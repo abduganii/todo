@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <form class="form">
+            <input class="input" placeholder="New todo" type="text">
+        </form>
+
+        <ul class="list">
+        </ul>
+
+        <div class="div">
+            <p><span class="all-count"></span>All</p>
+            <p><span class="completed-count"></span>Completed</p>
+            <p><span class="Uncompleted-count"></span>Uncompleted</p>
+
+        </div>
+    </div>
+
+    <template id="todo-template">
+        <li class="list-item">
+            <input class="is-complate" type="checkbox">
+            <p class="todo-text">todo</p>
+            <button class="todo-btn">&timesd;</button>
+        </li>
+    </template>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
